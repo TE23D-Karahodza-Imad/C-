@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Hello adventurer, you have entered the Redlight Forest.. You have two paths to choose, left or right? ");
+﻿using System.Data;
+
+Console.WriteLine("Hello adventurer, you have entered the Redlight Forest.. You have two paths to choose, left or right? ");
 //
 Console.Write("> ");
 string pathChoice = Console.ReadLine();
@@ -12,7 +14,7 @@ if (pathChoice.ToLower() == "right")
     Console.Write("> ");
     string mushroomChoice = Console.ReadLine();
 
-    if (mushroomChoice.ToLower() == "accept");
+    if (mushroomChoice.ToLower() == "accept")
     {
         Console.WriteLine("...");
         Console.WriteLine("Where am I?.. you ask yourself.");
@@ -23,7 +25,7 @@ if (pathChoice.ToLower() == "right")
         Console.Write("> ");
         string helpleaveChoice = Console.ReadLine();
 
-        if (helpleaveChoice.ToLower() == "help");
+        if (helpleaveChoice.ToLower() == "help")
         {
             Console.WriteLine("Your wet and weak body gets made fun of by the Gnomes");
             Console.WriteLine("Gnomes take you in to their tavern where you are cooked and eaten alive by them..");
@@ -31,9 +33,10 @@ if (pathChoice.ToLower() == "right")
         }
     }
 
-    else if
+    else if (mushroomChoice.ToLower() == "reject")
     {
-
+        Console.WriteLine("You start slowly walking towards your destination.. The one you were always supposed to go to");
+        Console.WriteLine("You reach the castle which you were sent to..");
     }
 
     else
@@ -49,7 +52,7 @@ if (pathChoice.ToLower() == "right")
 
 
  {
-if (pathChoice.ToLower() == "left")
+if (pathChoice.ToLower() == "left");
  }
 
 
