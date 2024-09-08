@@ -20,8 +20,8 @@ if (pathChoice.ToLower() == "right")
     {
         Console.WriteLine("...");
         Console.WriteLine("Where am I?.. you ask yourself.");
-        Console.WriteLine("You find yourself lying down in a wet muddy pond in the middle of a Village..");
-        Console.WriteLine("But it is not any village, it is a Gnome Village.. Do you ask for help or leave?");  
+        Console.WriteLine("You find yourself lying down in a wet muddy pond in the middle of a village..");
+        Console.WriteLine("But its not any village, its a Gnome Village.. Do you ask for help or leave?");  
 
         //Choice
         Console.Write("> ");
@@ -35,12 +35,12 @@ if (pathChoice.ToLower() == "right")
         }
         else if   (helpleaveChoice.ToLower() == "leave")
         {
-            Console.WriteLine("You leave the village and make you way back home, and on the way home you realise..");
-            Console.WriteLine("That those were sleep mushrooms.. You make it home safe..");
+            Console.WriteLine("You leave the village and make your way back home, and on the way you realise..");
+            Console.WriteLine("That those were sleepy mushrooms.. You make it home safe..");
         }
         else
         {
-            Console.WriteLine("Invalid choice. Please enter help or leave");
+            Console.WriteLine("Invalid choice. Please enter help or leave.");
         }
     }
 
@@ -53,7 +53,7 @@ if (pathChoice.ToLower() == "right")
 
     else
     {
-        Console.WriteLine("Invalid choice. Please enter accept or reject");
+        Console.WriteLine("Invalid choice. Please enter accept or reject.");
 
     }
 
@@ -71,13 +71,31 @@ if (pathChoice.ToLower() == "right")
     //
     Console.Write("> ");
     string fightChoice = Console.ReadLine();
+    
+    if (fightChoice.ToLower() == "fight")
+    {
+        Console.WriteLine("You take up arms against the Gnome Army and rush into the battle..");
+        Console.WriteLine("As you fight your way trough the enemies you become overwhelmed..");
+        Console.WriteLine("Gnomes slay you down and you die honourably!");
+        Console.WriteLine("The end..");
+    }
+
+    else if (fightChoice.ToLower() == "go back")
+    {
+        Console.WriteLine("You leave the pathway and find your way home.");
+        Console.WriteLine("The next morning you get the news of the invading Gnome Army, knocking on your door.");
+        Console.WriteLine("They take you as their prisoner and you have no choice but to follow them.. in chains..");
+        Console.WriteLine("To be continued..");
+    }
+    else
+    {
+        Console.WriteLine("Invalid choice. Please enter fight or go back.");
+    }
  }
-
-
 
 else
 {
-Console.WriteLine("Invalid choice. Please enter right or left");
+Console.WriteLine("Invalid choice. Please enter right or left.");
 }
 
 Console.ReadLine();
